@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+    <title>iConverge</title>
+
+    <!-- using online links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- using local links -->
+    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"> -->
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar-themes.css">
+    <link rel="stylesheet" href="./css/form-style.css">
+
+    <!-- datatable link  -->
+    <link href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="page-wrapper default-theme  bg1 toggled">
+        <nav id="sidebar" class="sidebar-wrapper"
+            style="box-shadow: 0px 2px 22px 0 rgb(0 0 0 / 20%), 0px 2px 30px 0 rgb(0 0 0 / 35%);">
+            <div class="sidebar-content">
+                <!-- sidebar-brand  -->
+                <div class="sidebar-item sidebar-brand">
+                    <a href="index.html" class="text-center">
+                        <img src="./img/logo.jpg" alt="" height="85px" width="160px">
+                    </a>
+                </div>
+                <!-- sidebar-header  -->
+                <!-- <div class="sidebar-item sidebar-header d-flex flex-nowrap">
+                    <div class="user-pic">
+                        <img class="img-responsive img-rounded" src="img/user.jpg" alt="User picture">
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Jhon
+                            <strong>Smith</strong>
+                        </span>
+                        <span class="user-role">Administrator</span>
+                        <span class="user-status">
+                            <i class="fa fa-circle"></i>
+                            <span>Online</span>
+                        </span>
+                    </div>
+                </div> -->
+                <!-- sidebar-search  -->
+                <div class="sidebar-item sidebar-search">
+                    <div>
+                        <div class="input-group">
+                            <input type="text" class="form-control search-menu" placeholder="Search...">
+                            <div class="input-group-append">
+                                <span class="input-group-text" style="margin-top: 6px; margin-left: 3px;">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sidebar-menu  -->
+                <div class=" sidebar-item sidebar-menu">
+                    <ul>
+                        <!-- <li class="header-menu">
+                            <span>General</span>
+                        </li> -->
+                        <li>
+                            <a href="#">
+                                <i class="far fa-user-circle"></i>
+                                <span class="menu-text">Profile</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-tachometer-alt"></i>
+                                <span class="menu-text">Dashboard</span>
+                                <!-- <span class="badge badge-pill badge-warning">New</span> -->
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Dashboard 1
+                                            <!-- <span class="badge badge-pill badge-success">Pro</span> -->
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Dashboard 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Dashboard 3</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fas fa-bell"></i>
+                                <span class="menu-text">Notice</span>
+                                <!-- <span class="badge badge-pill badge-danger">3</span> -->
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Notice One</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Notice Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Notice Three</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="far fa-gem"></i>
+                                <span class="menu-text">Components</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">General</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Panels</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tables</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Icons</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Forms</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="far fa-grin-stars"></i>
+                                <span class="menu-text">Stats</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Stats One</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Stats Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Stats Three</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Stats Four</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="far fa-envelope-open"></i>
+                                <span class="menu-text">Message</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Inbox</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sent</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-cog"></i>
+                                <span class="menu-text">Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span class="menu-text">Sign Out</span>
+                            </a>
+                        </li>
+                        <!-- <li class="header-menu">
+                            <span>Extra</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-book"></i>
+                                <span class="menu-text">Documentation</span>
+                                <span class="badge badge-pill badge-primary">Beta</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-calendar"></i>
+                                <span class="menu-text">Calendar</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-folder"></i>
+                                <span class="menu-text">Examples</span>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-footer  -->
+
+        </nav>
+        <!-- page-content  -->
+        <main class="page-content">
+            <div id="overlay" class="overlay"></div>
+            <div class="container-fluid" style="padding: 0px;">
+                <div class="title-bar"
+                    style="height: 90px; background-color: #eaeaea; box-shadow: 0 0 0.875rem 0 rgb(33 37 41 / 10%) !important;">
+                    <a id="toggle-sidebar" class="btn btn-secondary rounded-0" href="#"
+                        style="margin: 20px; background: #3ab54a;">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg></span>
+                    </a>
+                </div>
+                <div class="container pt-5 pb-5">
+                    <div class="card-container-holder">
+                        <div class="row">
+                            <div class="col-lg-1 col-md-1 col-sm-0"></div>
+                            <div class="col-lg-10 col-md-10 col-sm-12">
+                                <div class="card-5">
+                                    <div class="card-heading">
+                                        <h2 class="text-center">User Details</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <form action="/action_page.php">
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                                    <label for="" style="margin-top: 15px;">First Name</label>
+                                                </div>
+                                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                                    <input type="text" id="fname" name="firstname">
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                                    <label for="" style="margin-top: 15px;">Last Name</label>
+                                                </div>
+                                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                                    <input type="text" id="lname" name="lastname">
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                                    <label for="" style="margin-top: 15px;">Select Your Type</label>
+                                                </div>
+                                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                                    <select id="country" name="country">
+                                                        <option value="" selected>Option One</option>
+                                                        <option value="">Option Two</option>
+                                                        <option value="">Option Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                                    <label for="" style="margin-top: 15px;">Address</label>
+                                                </div>
+                                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                                    <input type="text" id="address" name="address">
+                                                </div>
+                                            </div>
+                                            
+
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                                    <label for="" style="margin-top: 15px;">Subject</label>
+                                                </div>
+                                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                                    <input type="text" id="subject" name="subject">
+                                                </div>
+                                            </div>
+                                            
+
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-3 col-sm-12">
+                                                    <label for="subject" style="margin-top: 15px;">Message</label>
+                                                </div>
+                                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                                    <textarea id="subject" name="subject" placeholder="Write something.."
+                                                style="height:200px"></textarea>
+                                                </div>
+                                            </div>
+                                            
+
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <input type="submit" value="Submit" class="btn btn-submit">
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <input type="submit" value="Edit" class="btn btn-submit">
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                                    <input type="submit" value="Delete" class="btn btn-submit">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-0"></div>
+                        </div>
+
+                        <div class="row mt-5 pt-3">
+                            <div class="col-lg-1 col-md-1 col-sm-0"></div>
+                            <div class="col-lg-10 col-md-10 col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title"> User List</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table" id="myTable">
+                                                <thead class=" text-secondary" style="font-size:14px">
+
+                                                    <th class="text-center">First Name</th>
+                                                    <th class="text-center">Last Name</th>
+                                                    <th class="text-center">Type</th>
+                                                    <th class="text-center">Address</th>
+                                                    <th class="text-center">Subject</th>
+                                                    <th class="text-center">Message</th>
+                                                </thead>
+                                                <tbody class="text-center">
+
+                                                    <tr>
+                                                        <td class="text-center">IT</td>
+                                                        <td class="text-center">Bangla</td>
+                                                        <td class="text-center">Business</td>
+                                                        <td class="text-center">Paltan, Dhaka</td>
+                                                        <td class="text-center">Application</td>
+                                                        <td class="text-center">Hi</td>
+                                                    </tr>
+
+
+                                                    <tr>
+                                                        <td class="text-center">IT</td>
+                                                        <td class="text-center">Bangla</td>
+                                                        <td class="text-center">Commercial</td>
+                                                        <td class="text-center">Dhaka</td>
+                                                        <td class="text-center">Application</td>
+                                                        <td class="text-center">How are you</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-0"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- page-content" -->
+    </div>
+    <!-- page-wrapper -->
+
+    <!-- using online scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+        </script>
+    <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- using local scripts -->
+    <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script> -->
+
+
+    <script src="js/main.js"></script>
+    <!-- datatable script  -->
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+    </script>
+</body>
+
+</html>
